@@ -1,0 +1,56 @@
+
+h1{
+        height: 143px;
+        background: url(../imgs/h1back3.jpg) no-repeat;
+    }
+
+h1 div{
+        font-size: 65px;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #fff;
+        float: right;
+        position: relative;
+        top:115px;
+        right: 10px;
+    }
+
+article{
+    float: left;
+    width:710px;
+    padding: 20px;
+}
+
+article h2{
+    font-size: 30px;
+    font-family: 'NanumGothic', sans-serif;
+    margin: 10px 0 30px 0;
+}
+
+#upphoto{
+    width: 500px;
+    margin: 0 80px;
+}
+#imgBG{
+    border: 1px solid red;
+   
+}
+article div.lab{
+    margin: 5px;
+    font-size: 1.2em;
+}
+#th{
+    box-sizing: 500px 500px;
+}
+
+#tt{
+    display: block;
+    padding: 3px;
+    background-color: #ccc;
+     width: 80px;
+     text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
