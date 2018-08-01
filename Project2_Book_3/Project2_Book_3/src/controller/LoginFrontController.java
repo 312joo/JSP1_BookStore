@@ -70,6 +70,15 @@ public class LoginFrontController extends HttpServlet{
 			}
 		}
 		
+		else if(commadn.equals("/cusInfoModifyForm.lo")) {
+			action=new LogoutProAction();
+			try {
+				forward=action.execute(req, resp);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
 		else if(command.equals("/idCheck.lo")) {
 			action=new idCheckAction();
 			try {
