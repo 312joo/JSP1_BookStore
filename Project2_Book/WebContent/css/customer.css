@@ -1,0 +1,122 @@
+
+h1{
+        height: 143px;
+        background: url(../imgs/h1back4.jpg) no-repeat;
+    }
+
+h1 div{
+        font-size: 65px;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #fff;
+        float: right;
+        position: relative;
+        top:115px;
+        right: 10px;
+    }
+
+article{
+    float: left;
+    width:710px;
+    padding: 20px;
+}
+
+article h2{
+    font-size: 30px;
+    font-family: 'NanumGothic', sans-serif;
+    margin: 10px 0 30px 0;
+}
+
+table#cbbs{
+    width: 680px;
+    border-top: 1px solid #363636;
+     border-bottom: 1px solid #ccc;
+    margin: 30px 0;
+}
+table#cbbs th, table#cbbs td{
+    padding: 9px;font-size: 0.8em;
+    text-align: center;
+}
+
+table#cbbs th{
+    border-bottom: 1px solid #363636;
+    font-size: 0.9em;
+     
+    background: #f2f6f8;
+}
+
+table#cbbs th:nth-child(2){
+    letter-spacing: 5em;
+}
+table#cbbs td{
+    border-bottom: 1px dotted #ccc;
+}
+table#cbbs tr:nth-child(even){
+    background-color: rgba(245, 245, 245, 0.9);
+}
+table#cbbs td:nth-child(2){
+    text-align: left;
+    width: 55%;
+}
+
+
+
+#page{
+    width: 700px;
+    text-align: center;
+}
+#page ul.paging{
+    list-style: none;
+}
+#page ul.paging li{
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+
+#page ul.paging li a:hover{
+    background-color: #ff7720;
+    color: #fff;
+}
+
+#serc{
+    float: left;
+    margin: 1px;
+}
+.search{
+    float:left;  
+}
+.search a{
+    display: block;
+    padding: 3px;
+    background-color: #ccc;
+     width: 40px;
+     text-align: center;
+   
+}
+
+.btn{
+    float: right;  
+}
+.btn a{
+    display: block;
+    padding: 5px;
+    background-color: azure;
+     width: 80px;
+     text-align: center;
+    border-radius: 10px;
+}
+.btn a:hover{
+    background-color: aquamarine;
+   color: #777;
+}
+
+
+
+
+
+
+
+

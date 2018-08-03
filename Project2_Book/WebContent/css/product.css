@@ -1,0 +1,76 @@
+
+h1{
+        height: 143px;
+        background: url(../imgs/h1back2.jpg) no-repeat;
+    }
+
+h1 div{
+        font-size: 65px;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #fff;
+        float: right;
+        position: relative;
+        top:115px;
+        right: 10px;
+    }
+
+article{
+    float: right;
+    width:710px;
+    padding: 20px;
+}
+
+article h2{
+    font-size: 30px;
+    font-family: 'NanumGothic', sans-serif;
+    margin: 10px 0 30px 0;
+}
+
+
+article article.phone{
+    margin: 5px 0;
+    width:650px;
+    float: left;
+    border-bottom: 1px dotted #ccc;    
+}
+article article.phone:last-child{
+    border-bottom: none;
+}
+article article.phone section{
+    float: left;
+    margin:0 0 15px 25px;
+}
+article figure.pimg{
+    float: left;
+    margin: 0 20px 0 0 ;
+}
+article figure.pimg img{
+    box-shadow: none;
+    width: 100px;
+    height: auto;
+}
+article article.phone h4{
+    font-family: 'NanumGothic', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+    width: 500px;
+}
+article article.phone ul{
+    list-style: none;
+    margin-left: 15px;
+}
+article article.phone ul li{
+    line-height: 1.8em;
+    padding-left: 10px;
+    background: url(../imgs/bullet.gif) no-repeat left 10px;
+}
+
+
+
+
+
+
+
+

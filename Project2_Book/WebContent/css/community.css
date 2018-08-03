@@ -1,0 +1,91 @@
+h1{
+        height: 143px;
+        background: url(../imgs/h1back3.jpg) no-repeat;
+    }
+
+h1 div{
+        font-size: 65px;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #fff;
+        float: right;
+        position: relative;
+        top:115px;
+        right: 10px;
+    }
+
+article{
+    float: left;
+    width:710px;
+    padding: 20px;
+}
+
+article h2{
+    font-size: 30px;
+    font-family: 'NanumGothic', sans-serif;
+    margin: 10px 0 30px 0;
+}
+
+article article#gallery figure{
+    float: left;
+    margin: 17px;
+}
+
+article article#gallery figure img{
+    width: 200px;
+    height: auto;
+    border: 1px solid #999;
+    outline: 2px solid #fff;
+    box-shadow: 3px 3px 10px #999;
+}
+article article#gallery figcaption{
+    height: 125px;
+    margin-top: -135px;
+    opacity: 0.1;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+article article#gallery figcaption:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+#page{
+    width: 700px;
+    text-align: center;
+}
+#page ul.paging{
+    list-style: none;
+}
+#page ul.paging li{
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+
+#page ul.paging li a:hover{
+    background-color: #ff7720;
+    color: #fff;
+}
+
+.btn{
+    float: right;  
+}
+.btn a{
+    display: block;
+    padding: 5px;
+    background-color: azure;
+     width: 80px;
+     text-align: center;
+    border-radius: 10px;
+}
+.btn a:hover{
+    background-color: aquamarine;
+   color: #777;
+}
