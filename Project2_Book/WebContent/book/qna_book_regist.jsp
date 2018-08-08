@@ -118,7 +118,7 @@ table{
 			<input type="button" onclick=history.back() value="취소">
 		</div>
 	</form>
-<jsp:include page="../footer.jsp"></jsp:include>
+
 </body>
 </html>
 

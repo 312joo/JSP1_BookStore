@@ -18,7 +18,7 @@ a{
     <a href="#">진행중인 이벤트</a><br><br>
     <a href="#">출간전 연재</a><br><br>
     <a href="cusBookList.book?push=award">문학상 수상작</a><br><br>
-    <a href="#">같이 읽어요!</a><br><br>
+    <a href="boardList.bo">같이 읽어요!</a><br><br>
     </div>
     
     <div class="clear"></div>

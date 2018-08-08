@@ -10,6 +10,7 @@
 		background: #eee;
 		height: auto;
 		padding: 10px 10px;
+
 	}
 	#cateImg{
 		padding: 5px, 10px;

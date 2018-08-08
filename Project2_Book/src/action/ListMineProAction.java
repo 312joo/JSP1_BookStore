@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import svc.BoardListService;
 import vo.ActionForward;
@@ -18,10 +19,12 @@ public class ListMineProAction implements Action{
 		ArrayList<GroupListBean> articleList=new ArrayList<GroupListBean>();
 		BoardListService boardListService=new BoardListService();
 		String id=null;
+		HttpSession session=req.getSession();
+		
 		
 		//id받기
-		if(req.getParameter("cutomer_id")!=null) {
-			id=req.getParameter("cutomer_id");
+		if(session.getAttribute("customer_id")!=null) {
+			id=(String) session.getAttribute("customer_id");
 		}else {
 			//id없으면 로그인 페이지로
 			ActionForward forward=new ActionForward();

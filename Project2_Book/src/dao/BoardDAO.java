@@ -102,7 +102,8 @@ public class BoardDAO {
 	@SuppressWarnings("null")
 	public ArrayList<GroupListBean> selectMyList(String id, int nowPage, int limit){
 		
-		ArrayList<GroupListBean> articleList=null;
+		
+		ArrayList<GroupListBean> articleList=new ArrayList<GroupListBean>();
 		GroupListBean bean=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
@@ -110,7 +111,7 @@ public class BoardDAO {
 		int startrow=(nowPage-1)*limit;
 		
 		try {
-			pstmt=con.prepareStatement("select * from readingGroup where customer_id=? order by group_num desc limit ?, ? ");
+			pstmt=con.prepareStatement("select * from readingGroup where customer_id=? order by group_num desc limit ?, ?");
 			pstmt.setString(1, id);
 			pstmt.setInt(2, startrow);
 			pstmt.setInt(3, limit);
@@ -131,7 +132,7 @@ public class BoardDAO {
 				
 				articleList.add(bean);
 			}
-			
+		
 		}catch(SQLException e) {
 			System.out.println("selectMyList ¿¡·¯: "+e);
 		}finally {
@@ -156,7 +157,7 @@ public class BoardDAO {
 			if(rs.next()) num=rs.getInt(1)+1;
 			else num=1;
 			
-			String sql="insert into readingGroup (group_name,field,group_area,group_subject,group_content,group_recruiting,customer_id,group_date,group_readcount) values(?,?,?,?,?,?,?,now(),?)";
+			String sql="insert into readingGroup (group_name,field,group_area,group_subject,group_content,group_recruiting,customer_id,group_date,group_readcount,group_num) values(?,?,?,?,?,?,?,now(),?,?)";
 			pstmt=con.prepareStatement(sql);
 			
 			pstmt.setString(1, bean.getGroup_name());
@@ -167,6 +168,7 @@ public class BoardDAO {
 			pstmt.setBoolean(6, bean.getGroup_recruiting());
 			pstmt.setString(7, bean.getCustomer_id());
 			pstmt.setInt(8, 1);
+			pstmt.setInt(9, num);
 			
 			insertCount=pstmt.executeUpdate();
 		}catch(SQLException e) {

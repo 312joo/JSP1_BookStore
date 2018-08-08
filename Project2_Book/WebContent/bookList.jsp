@@ -13,7 +13,6 @@
 		%><script>history.back();</script><%
 	}
 %>
-<meta charset="utf-8">
 
 <html>
 <style>
@@ -26,6 +25,7 @@
 		color: red;
 		
 	}
+
 
 </style>
 <body>

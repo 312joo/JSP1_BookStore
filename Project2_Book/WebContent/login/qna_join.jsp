@@ -46,6 +46,13 @@ table{
 </style>
 
 <body>
+<table id="wrap">
+<tr>
+	<td><jsp:include page="header.jsp"></jsp:include></td>
+</tr>
+
+<tr>
+<td id="contents">
 <div id="joinFormArea">
 	<form name="joinform" action="JoinPro.lo" method="post" onsubmit="return formCheck(this)">
 	<h3>회원가입</h3>
@@ -102,6 +109,8 @@ table{
 	
 	</form>
 </div>
+</td>
+</tr>
 </body>
 </html>
 

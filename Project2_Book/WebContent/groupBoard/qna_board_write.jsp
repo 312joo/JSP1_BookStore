@@ -47,6 +47,18 @@ table{
 }
 </style>
 <body>
+<table id="wrap">
+<tr>
+	<td colspan="2"><jsp:include page="../header.jsp"></jsp:include></td>
+</tr>
+<tr>
+     <td colspan="2" id="category_td"><jsp:include page="../category.jsp"></jsp:include></td>
+</tr>
+<tr>
+<td width="20%" height="100%" id="contents">
+ <jsp:include page="../left.jsp"></jsp:include>
+</td>
+<td id="contents">
 <div>
 	<h2>새 글 등록</h2>
 	<form action="writePro.bo" method="post" name="boardform">
@@ -106,10 +118,18 @@ table{
 		<div id="commandCell">
 			<input type="submit" value="등록"/>&nbsp;&nbsp;
 			<input type="reset" value="다시 작성"/>&nbsp;&nbsp;
-			<input type="button" value="취소" onClick='onCancel'/>
+			<input type="button" value="취소" onClick='onCancel()'/>
 		</div>
 	</form>
 </div>
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+      <jsp:include page="../footer.jsp"></jsp:include>
+     </td>
+</tr>
+</table>
 </body>
 </html>
 <script>

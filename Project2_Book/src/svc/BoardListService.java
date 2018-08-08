@@ -45,7 +45,7 @@ public class BoardListService{
 		BoardDAO boardDAO=BoardDAO.getInstance();
 		boardDAO.setConnection(con);
 		
-		myList=boardDAO.selectMyList(id, nowPage, limit);
+		myList=boardDAO.selectMyList(id,nowPage, limit);
 		
 		close(con);
 		

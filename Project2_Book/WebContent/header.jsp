@@ -6,13 +6,11 @@
     		customer_id=(String)session.getAttribute("customer_id");
     	}
     	
-    	/*
-    	
+    	/*    	
     		font-size:0.75em;
 	font-family:"맑은 고딕",sans-serif;
 	color:#333;
-	line-height:1.2em;
-    	
+	line-height:1.2em;	
     	*/
     %>
 

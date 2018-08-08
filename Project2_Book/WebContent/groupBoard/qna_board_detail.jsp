@@ -56,9 +56,9 @@
 <style type="text/css">
 
 #articleForm{
-	width: 500px;
-	height: 500px;
-	border: 1px solid red;
+	width: 800px;
+	height: auto;
+	border: 1px solid #ccc;
 	margin: auto;
 }
 
@@ -69,11 +69,12 @@ h2{
 #basicInfoArea{
 	height: 40px;
 	text-align:center;
+	
 }
 
 #articleContentArea{
-	background: orange;
-	margin-top: 20px;
+	background: #eee;
+	margin-top: 50px;
 	height: 350px;
 	text-align: center;
 	overflow: auto;
@@ -86,16 +87,27 @@ h2{
 }
 </style>
 <body>
-<jsp:include page="../header.jsp"></jsp:include>
+<table id="wrap">
+<tr>
+	<td colspan="2"><jsp:include page="../header.jsp"></jsp:include></td>
+</tr>
+<tr>
+     <td colspan="2" id="category_td"><jsp:include page="../category.jsp"></jsp:include></td>
+</tr>
+<tr>
+<td width="20%" height="100%" id="contents">
+ <jsp:include page="../left.jsp"></jsp:include>
+</td>
+<td id="contents">
 <div id="articleForm">
-	<h2>글 내용 상세보기</h2>
+	<h2>글 내용 상세보기</h2><br>
 	<div id="basicInfoArea">
-		제 목 : <%=bean.getGroup_subject() %>
-		작성자: <%=bean.getCustomer_id() %>
-		모임명: <%=bean.getGroup_name() %>
-		관련분야: <%=field %>
+		<b>제 목 : <%=bean.getGroup_subject() %>&nbsp;&nbsp;
+		작성자: <%=bean.getCustomer_id() %><br>
+		모임명: <%=bean.getGroup_name() %>&nbsp;&nbsp;
+		관련분야: <%=field %>&nbsp;&nbsp;
 		지역: <%=area %>
-		모집여부: <%=rec %>
+		모집여부: <%=rec %></b>
 	</div>
 	<div id="articleContentArea">
 		<%=bean.getGroup_content() %>
@@ -111,6 +123,13 @@ h2{
 			&nbsp;&nbsp;
 	</div>
 </div>
-<jsp:include page="../footer.jsp"></jsp:include>
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+      <jsp:include page="../footer.jsp"></jsp:include>
+     </td>
+</tr>
+</table>
 </body>
 </html>

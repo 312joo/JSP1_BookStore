@@ -30,7 +30,7 @@ public class CartAddService {
 		
 		for(int i=0;i<cartlist.size();i++) {
 				//기존에 담겨있는 항목이면 수량올려주기
-			if(cartlist.get(i).getBook_num()==bean.getBook_num())  {System.out.println("in");
+			if(cartlist.get(i).getBook_num()==bean.getBook_num())  {
 				isNewCart=false;
 				updateCount=cartDAO.addCartAmount(bean.getCart_amount(),bean.getcustomer_id(), bean.getBook_num());	
 				if(updateCount>0) {

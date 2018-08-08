@@ -58,6 +58,10 @@ table{
 	width: 500px;
 	text-align: center;
 }
+#emptyTable{
+	width: 300px;
+	padding-top: 30px;
+}
 #writing{
 	text-align: center;
 }
@@ -74,7 +78,16 @@ table{
 </style>
 </head>
 <body>
-<jsp:include page="../header.jsp"></jsp:include>
+<table id="wrap">
+<tr>
+	<td colspan="2"><jsp:include page="../header.jsp"></jsp:include></td>
+</tr>
+<tr>
+     <td colspan="2" id="category_td"><jsp:include page="../category.jsp"></jsp:include></td>
+</tr>
+<tr>
+
+<td id="contents">
 <div id="listFrom">
 	<h2>
 		함께 읽어요!<br><br>
@@ -203,15 +216,20 @@ table{
 
 	else{%>
 	<div id="emptyArea">등록된 글이 없습니다.</div>
-	<table>
-	<tr>
-		 	
+	<table id="emptyTable">
+	<tr> 	
 		 	<td id="writing"><a href="writeForm.bo">모임개설</a></td>
 		 	<td id="writing"><a href="listMinePro.bo">내가 쓴 글</a>
 	</tr>
 	</table>
 	<%}%>
-	
-	<jsp:include page="../footer.jsp"></jsp:include>
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+      <jsp:include page="../footer.jsp"></jsp:include>
+     </td>
+</tr>
+</table>
 </body>
 </html>
